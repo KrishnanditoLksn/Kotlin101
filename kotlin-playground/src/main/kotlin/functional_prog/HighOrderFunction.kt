@@ -2,6 +2,8 @@ package org.example.functional_prog
 
 
 fun main() {
+    val rev = "Dito"
+    println(rev.reversed())
     printResult(10) { value ->
         value + value
     }

@@ -9,7 +9,7 @@ fun main() {
 
     println(message)
 
-    var favActor:String? = "Sandra Oh"
+    var favActor: String? = "Sandra Oh"
     println(favActor?.length)
 }
 
