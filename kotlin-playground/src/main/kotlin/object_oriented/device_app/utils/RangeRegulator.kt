@@ -22,5 +22,4 @@ class RangeRegulator(
             fieldData = value
         }
     }
-
 }

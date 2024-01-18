@@ -15,3 +15,7 @@ fun printResult(value: Int, sum: (Int) -> Int) {
 }
 
 var sum: (Int) -> Int = { value -> value + value }
+
+
+
+

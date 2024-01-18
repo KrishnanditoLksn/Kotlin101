@@ -3,7 +3,8 @@ package org.example.functional_prog
 import java.util.*
 
 fun main() {
-    val lambdaName: (String) -> String = { value: String ->
+    val lambdaName: (String) -> String = {
+        value: String ->
         value.uppercase(Locale.getDefault())
     }
 
