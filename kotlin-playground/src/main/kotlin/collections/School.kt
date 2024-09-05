@@ -1,12 +1,8 @@
 package org.example.collections
 
 
-
 sealed class School {
-    class Classroom(classname: String, classCode: Int) : School(){
-        override fun toString(): String {
-            return super.toString()
-        }
+    class Classroom(classname: String, classCode: Int) : School() {
     }
 
 
@@ -24,7 +20,7 @@ sealed class School {
         }
     }
 
-    data class Book(val title: String, val authors: List<String>, val isbn: List<Int>) : School(){
+    data class Book(val title: String, val authors: List<String>, val isbn: List<Int>) : School() {
         override fun toString(): String {
             return super.toString()
         }

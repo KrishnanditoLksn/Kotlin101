@@ -2,7 +2,10 @@ package org.example
 
 fun main() {
     println("Hello World!")
-    println(bubbleSort(intArrayOf(1,123,1)))
+    val a = arrayOf(2, 2, 1)
+    println(singleNumber(a))
+    println(1 xor 2)
+    implementElvis()
 }
 
 fun bubbleSort(array: IntArray): String {
@@ -11,10 +14,24 @@ fun bubbleSort(array: IntArray): String {
             if (array[i] > array[i + i]) {
                 val temp = array[j]
                 array[j] = array[i + 1]
-                array[i + 1 ] = temp
+                array[i + 1] = temp
                 return temp.toString()
             }
         }
     }
-    return  " "
+    return " "
+}
+
+fun singleNumber(nums: Array<Int>): Int {
+    var a = 0
+    for (i in nums.indices) {
+        a = a xor i
+    }
+    return a
+}
+
+fun implementElvis(): String {
+    val a: String = "Dito"
+    val immutable: String = a
+    return immutable
 }
